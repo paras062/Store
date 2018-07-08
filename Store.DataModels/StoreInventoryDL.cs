@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store.BusinessModels
+namespace Store.DataModels
 {
-    public class StoreInventory
+    public class StoreInventoryDL
     {
         public int Id { get; set; }
         public string ContentName { get; set; }
