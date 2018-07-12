@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 </head>
-<body>
+<body style="background-color:orange">
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="lblID" runat="server"></asp:Label>
