@@ -73,18 +73,18 @@ namespace Store.Tests
             Assert.GreaterOrEqual(rowCount, 1);
         }
 
-        [Test]
-        public void DeleteData_Test()
-        {
-            StoreBusinessLayer.StoreBusinessLayer oStoreBusinessLayer = new StoreBusinessLayer.StoreBusinessLayer();
-            StoreInventoryBL oStoreInventoryBL = new StoreInventoryBL();
+        //[Test]
+        //public void DeleteData_Test()
+        //{
+        //    StoreBusinessLayer.StoreBusinessLayer oStoreBusinessLayer = new StoreBusinessLayer.StoreBusinessLayer();
+        //    StoreInventoryBL oStoreInventoryBL = new StoreInventoryBL();
 
-            oStoreInventoryBL.Id = 1010;
+        //    oStoreInventoryBL.Id = 1010;
 
-            int rowCount = oStoreBusinessLayer.DeleteDataBL(oStoreInventoryBL);
-            Assert.GreaterOrEqual(rowCount, 1);
+        //    int rowCount = oStoreBusinessLayer.DeleteDataBL(oStoreInventoryBL);
+        //    Assert.GreaterOrEqual(rowCount, 1);
 
-            //Assert.LessOrEqual(rowCount, 1);
-        }
+        //    //Assert.LessOrEqual(rowCount, 1);
+        //}
     }
 }
