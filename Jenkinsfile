@@ -16,5 +16,10 @@ pipeline {
         bat '"C:\\Program Files (x86)\\NUnit.org\\nunit-console\\nunit3-console.exe" "C:\\Users\\Paras\\Source\\Repos\\Store\\Store.Tests\\bin\\Debug\\Store.Tests.dll"'
       }
     }
+    stage('') {
+      steps {
+        waitForQualityGate true
+      }
+    }
   }
 }
