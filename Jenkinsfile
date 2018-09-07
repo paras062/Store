@@ -11,5 +11,10 @@ pipeline {
         bat '"C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe" "C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store\\Store.csproj" /t:Rebuild /p:Configuration=Release /p:OutputPath="C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store"'
       }
     }
+    stage('Publish_Application') {
+      steps {
+        bat 'xcopy "C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store\\_PublishedWebsites\\Store" "C:\\inetpub\\wwwroot\\Publish" /Y /E'
+      }
+    }
   }
 }
