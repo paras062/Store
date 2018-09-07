@@ -16,9 +16,9 @@ pipeline {
         bat '"C:\\Program Files (x86)\\NUnit.org\\nunit-console\\nunit3-console.exe" "C:\\Users\\Paras\\Source\\Repos\\Store\\Store.Tests\\bin\\Debug\\Store.Tests.dll"'
       }
     }
-    stage('') {
+    stage('Sonar_Begin') {
       steps {
-        waitForQualityGate true
+        bat '"C:\\Users\\Paras\\Downloads\\sonar-scanner-msbuild-4.3.1.1372-net46\\SonarScanner.MSBuild.exe" ""C:\\Program Files (x86)\\Jenkins\\workspace\\StoreInventory" begin /k:"StoreJob_BlueOcean"'
       }
     }
   }
