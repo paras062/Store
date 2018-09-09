@@ -26,5 +26,10 @@ pipeline {
         bat '"C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe" "C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store\\Store.csproj" /t:Rebuild /p:Configuration=Release /p:OutputPath="C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store"'
       }
     }
+    stage('Sonar_End') {
+      steps {
+        bat 'C:\\Users\\Paras\\Downloads\\sonar-scanner-msbuild-4.3.1.1372-net46\\SonarScanner.MSBuild.exe end'
+      }
+    }
   }
 }
