@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D8779A15-D0B9-4A02-825C-F60F8836241F}</ProjectGuid>
+    <ProjectGuid>{64F5BA29-F9A9-4AA7-854D-596875840BAD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StoreBusinessLayer</RootNamespace>
-    <AssemblyName>StoreBusinessLayer</AssemblyName>
+    <RootNamespace>StoreDataAccess</RootNamespace>
+    <AssemblyName>StoreDataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -46,21 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StoreBusinessLayer.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="StoreDataAccessLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Store.BusinessModels\Store.BusinessModels.csproj">
-      <Project>{48cdfc67-a3d5-495f-9fa3-49e4e520c5f4}</Project>
-      <Name>Store.BusinessModels</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Store.DataModels\Store.DataModels.csproj">
-      <Project>{25EF03B4-1BE2-416D-9C86-67BA39BB7641}</Project>
+      <Project>{25ef03b4-1be2-416d-9c86-67ba39bb7641}</Project>
       <Name>Store.DataModels</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StoreDataAccess\StoreDataAccessLayer.csproj">
-      <Project>{64f5ba29-f9a9-4aa7-854d-596875840bad}</Project>
-      <Name>StoreDataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
