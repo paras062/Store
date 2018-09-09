@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Sonar_Begin') {
       steps {
-        bat '"C:\\Users\\Paras\\Downloads\\sonar-scanner-msbuild-4.3.1.1372-net46\\SonarScanner.MSBuild.exe" begin /k:"StoreJob_BlueOcean"'
+        bat 'C:\\Users\\Paras\\Downloads\\sonar-scanner-msbuild-4.3.1.1372-net46\\SonarScanner.MSBuild.exe begin /k:"StoreJob_BlueOcean'
       }
     }
   }
