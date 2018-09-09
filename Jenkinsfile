@@ -21,5 +21,10 @@ pipeline {
         bat 'C:\\Users\\Paras\\Downloads\\sonar-scanner-msbuild-4.3.1.1372-net46\\SonarScanner.MSBuild.exe begin /k:"StoreJob_BlueOcean'
       }
     }
+    stage('Sonar_MSBuild') {
+      steps {
+        bat '"C:\\Program Files (x86)\\MSBuild\\14.0\\Bin\\amd64\\MSBuild.exe" "C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store\\Store.csproj" /t:Rebuild /p:Configuration=Release /p:OutputPath="C:\\Program Files (x86)\\Jenkins\\workspace\\StoreJob\\Store"'
+      }
+    }
   }
 }
