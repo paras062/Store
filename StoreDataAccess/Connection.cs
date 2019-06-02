@@ -9,6 +9,6 @@ namespace StoreDataAccess
 {
     public class Connection
     {
-        public SqlConnection oSqlConnection = new SqlConnection(@"Data Source=LAPTOP-5HI8CS4B\SQLEXPRESS;Initial Catalog=StoreDB;Integrated Security=True");
+        public SqlConnection oSqlConnection = new SqlConnection(@"Data Source=LAPTOP-9M25MP0T;Initial Catalog=StoreDB;Integrated Security=True");
     }
 }
