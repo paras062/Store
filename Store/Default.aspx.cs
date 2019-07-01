@@ -49,7 +49,7 @@ namespace Store
 
             int rowCount = oStoreBusinessLayer.InsertDataDL(oStoreInventoryBL);
 
-            if (rowCount > 1)
+            if (rowCount >= 1)
             {
                 ReadData();
             } 
@@ -74,7 +74,7 @@ namespace Store
 
             int rowCount = oStoreBusinessLayer.UpdateDataBL(oStoreInventoryBL);
 
-            if (rowCount > 1)
+            if (rowCount >= 1)
             {
                 ReadData();
             }
@@ -90,7 +90,7 @@ namespace Store
 
             int rowCount = oStoreBusinessLayer.DeleteDataBL(oStoreInventoryBL);
 
-            if (rowCount > 1)
+            if (rowCount >= 1)
             {
                 ReadData();
             }
