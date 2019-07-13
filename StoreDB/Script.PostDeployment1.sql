@@ -10,4 +10,4 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-INSERT INTO dbo.[StoreInventory] ([ContentName], [ContentQuantity]) VALUES ('Ketchup', '140'), ('Salsa Sauce', '35'), ('Dorritos', 40)
+INSERT INTO dbo.[StoreInventory] ([ContentName], [ContentQuantity]) VALUES ('Ketchup', '140'), ('Salsa Sauce', '35'), ('Dorritos', 40), ('Tortilla', 30)

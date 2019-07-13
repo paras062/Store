@@ -36,7 +36,6 @@ namespace StoreBusinessLayer
 
             iStoreInventoryDL = oStoreDataAccess.ReadDataDL();
 
-            //iStoreInventoryBL.Add = iStoreInventoryDL;
 
             foreach (var item in iStoreInventoryDL)
             {
@@ -47,18 +46,6 @@ namespace StoreBusinessLayer
 
                 iStoreInventoryBL.Add(oStoreInventoryBL);
             }
-
-
-            //Populating data model object with the data coming from Data Access Layer's ReadData() Method
-            //oStoreInventoryDL = oStoreDataAccess.ReadDataDL();
-
-
-
-
-            //Populating Business data model varialbes with that of data model's
-            //oStoreInventoryBL.Id = oStoreInventoryDL.Id;
-            //oStoreInventoryBL.ContentName = oStoreInventoryDL.ContentName;
-            //oStoreInventoryBL.ContentQuantity = oStoreInventoryDL.ContentQuantity;
 
             //returning business data model object to view.
             return iStoreInventoryBL;

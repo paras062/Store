@@ -37,11 +37,6 @@ namespace StoreDataAccess
             try
             {
                 SqlDataReader oSqlDataReader = oSqlCommand.ExecuteReader();
-                //while (oSqlDataReader.Read())
-                //{
-                //oStoreInventory = oSqlDataReader;
-                //}
-
                 while (oSqlDataReader.Read())
                 {
                     oStoreInventoryDL = new StoreInventoryDL();
@@ -53,7 +48,6 @@ namespace StoreDataAccess
 
                 }
 
-                //iStoreInventoryDL.Add(oStoreInventory);
             }
             catch
             {
